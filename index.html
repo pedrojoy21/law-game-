@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pixel Counsel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="game">
+  <canvas id="screen" width="320" height="180"></canvas>
+
+  <div id="hud" class="hidden">
+    <div id="hudleft"></div>
+    <div id="hudright">
+      <button id="btnLeave" class="hbtn hidden" title="Leave location (Esc)">LEAVE</button>
+      <button id="btnEvidence" class="hbtn hidden" title="Case file (C)">CASE FILE</button>
+      <button id="btnMute" class="hbtn" title="Sound">SND:ON</button>
+    </div>
+  </div>
+
+  <div id="trialbar" class="hidden">
+    <div class="tlabel">JURY</div>
+    <div class="meter"><div id="meterfill"></div><div id="meterline"></div></div>
+    <div id="hearts"></div>
+  </div>
+
+  <div id="tooltip" class="hidden"></div>
+  <div id="prompt" class="hidden"></div>
+
+  <div id="dialog" class="hidden">
+    <canvas id="portrait" width="32" height="32"></canvas>
+    <div class="dbody">
+      <div id="dname"></div>
+      <div id="dtext"></div>
+    </div>
+    <div id="dnext">&#9660;</div>
+  </div>
+
+  <div id="menu" class="hidden"></div>
+  <div id="panel" class="hidden"></div>
+  <div id="banner" class="hidden"></div>
+  <div id="toasts"></div>
+</div>
+
+<script src="js/art.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/data.js"></script>
+<script src="js/cases.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
